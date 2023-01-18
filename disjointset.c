@@ -85,7 +85,7 @@ t=r->head;
 printf("set members containing %d:",a);
 while(t!=0)
 {
-printf("%d ",t->value);
+printf("%d,",t->value);
 t=t->next;
 }
 }
@@ -114,10 +114,12 @@ case 2:
      printf("Reference of set containing %d is %x",data,find(data));
      break;
 case 3:
-     printf("Enter the  data:");
-     scanf("%d%d",&data1,&data2);
-     unionset(data1,data2);
-     break;
+   printf("\nEnter the first data:");
+   scanf("%d",&data1);
+   printf("\nEnter the second data:");
+   scanf("%d",&data2);
+   unionset(data1,data2);
+break;
 case 4:
      printf("Enter the data:");
      scanf("%d",&data);
